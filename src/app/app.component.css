@@ -1,10 +1,23 @@
 .brandname {
   margin-left: 10px;
   font-weight: bold;
+  color: white;
 }
 
-.home-container {
-  margin-top: 30px;
+.view-container {
+  margin-top: 60px;
+  position: absolute;
   margin-left: 50%;
-  transform: translate(-60%);
+  transform: translate(-50%);
+}
+
+.navbar {
+  background-color: orange;
+}
+
+.search-box {
+  position: absolute;
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 500px;
 }

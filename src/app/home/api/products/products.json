@@ -1,0 +1,66 @@
+[
+  {
+    "productId":1,
+    "productName": "Iphone 3gs seconde main",
+    "price": 650,
+    "category": "electonique",
+    "description": "Iphone 3gs en parfait état. Remise en mains propres uniquement.",
+    "imageURL": "assets/images/phone.jpg"
+  },
+  {
+    "productId":2,
+    "productName": "Livres français classiques",
+    "price": 20,
+    "category": "livres",
+    "description": "Tous les livres dont votre enfant a besoin pour passer le bac de français.",
+    "imageURL": "assets/images/book.jpg"
+  },
+  {
+    "productId":3,
+    "productName": "Converse noir - taille 42",
+    "price": 60,
+    "category": "vêtement",
+    "description": "Converses noir classiques.",
+    "imageURL": "assets/images/converse.png"
+  },
+  {
+    "productId":4,
+    "productName": "T-shirt blanc - taille S",
+    "price": 10,
+    "category": "vêtement",
+    "description": "T-shirt blanc. Taille S. 100% coton biologique de Belgique.",
+    "imageURL": "assets/images/t-shirt.jpg"
+  },
+  {
+    "productId":5,
+    "productName": "Lot de muffins",
+    "price": 2.50,
+    "category": "nourriture",
+    "description": "Lots de muffins glacés. Pour les petites ou grosses faims.",
+    "imageURL": "assets/images/muffin.jpg"
+  },
+  {
+    "productId":6,
+    "productName": "Panier de fruits et légumes frais",
+    "price": 25,
+    "category": "nourriture",
+    "description": "Fruits et légumes bio, de saison.",
+    "imageURL": "assets/images/vegetables.jpg"
+  },
+  {
+    "productId":7,
+    "productName": "Imac",
+    "price": 1500,
+    "category": "electonique",
+    "description": "Imac neuf dernière génération.",
+    "imageURL": "assets/computer.jpg"
+  },
+  {
+    "productId":8,
+    "productName": "Collections de vieux livres",
+    "price": 0.95,
+    "category": "livres",
+    "description": "Collection de vieux livres. Idéale pour décoration.",
+    "imageURL": "assets/images/old_book.jpg"
+  }
+]

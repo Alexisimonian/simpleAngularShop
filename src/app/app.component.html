@@ -6,19 +6,24 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light">
       <a class="navbar-brand" href="/"
         ><img
-          src="../assets/favicon.png"
-          width="40"
+          src="../assets/images/cartlogo.png"
+          width="30"
           height="30"
           alt="small cart
         logo"
         /><span class="brandname">SuperShop</span></a
       >
+      <input
+        type="text"
+        class="search-box"
+        placeholder="search what you need here"
+      />
     </nav>
-    <div class="home-container">
-      <app-home></app-home>
+    <div class="view-container">
+      <router-outlet></router-outlet>
     </div>
   </body>
 </html>
