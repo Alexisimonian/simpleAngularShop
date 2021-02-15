@@ -1,1 +1,67 @@
-<p>product-list works!</p>
+<table class="layout">
+  <tr>
+    <td class="product-list">
+      <table class="product-list-table" *ngIf="products">
+        <thead>
+          <th>Photo</th>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Shop</th>
+        </thead>
+        <tr *ngFor="let product of products">
+          <td class="item-img">
+            <img
+              [src]="product.imageURL"
+              [alt]="product.productName"
+              [title]="product.productName"
+              [style.width.px]="170"
+              [style.height.px]="130"
+            />
+          </td>
+          <td>
+            <div class="product-title">{{ product.productName }}</div>
+            <div class="product-description">{{ product.description }}</div>
+          </td>
+          <td>{{ product.price | currency: "EUR":"symbol":"1.2-2" }}</td>
+          <td>
+            <button
+              class="btn btn-warning"
+              (click)="buyItem(product.productName, product.price)"
+            >
+              <img
+                src="assets/images/cartlogo.png"
+                alt="buy item"
+                title="buy item"
+                width="25"
+              />
+            </button>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td class="shopping-cart">
+      <div class="card" id="empty-cart" *ngIf="cart.length === 0">
+        <div class="card-header">Cart</div>
+        <div class="card-body">Your basket is currently empty.</div>
+      </div>
+      <div class="card" id="filled-cart" *ngIf="cart.length > 0">
+        <div class="card-header">Cart</div>
+        <div class="card-body" id="filled-cart-body">
+          <ul class="list-group list-group" *ngFor="let cartItem of cart">
+            <li class="list-group-item">
+              <table>
+                <tr>
+                  <td>{{ cartItem.productName }}</td>
+                  <td>
+                    {{ cartItem.price | currency: "EUR":"symbol":"1.2-2" }}
+                  </td>
+                  <td>{{ cartItem.quantity }}</td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>

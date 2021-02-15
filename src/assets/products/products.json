@@ -1,15 +1,15 @@
 [
   {
     "productId":1,
-    "productName": "Iphone 3gs seconde main",
+    "productName": "IPhone 3gs seconde main",
     "price": 650,
     "category": "electonique",
-    "description": "Iphone 3gs en parfait état. Remise en mains propres uniquement.",
+    "description": "IPhone 3gs en parfait état. Remise en mains propres uniquement.",
     "imageURL": "assets/images/phone.jpg"
   },
   {
     "productId":2,
-    "productName": "Livres français classiques",
+    "productName": "Livres français classique",
     "price": 20,
     "category": "livres",
     "description": "Tous les livres dont votre enfant a besoin pour passer le bac de français.",
@@ -49,15 +49,15 @@
   },
   {
     "productId":7,
-    "productName": "Imac",
+    "productName": "IMac",
     "price": 1500,
     "category": "electonique",
     "description": "Imac neuf dernière génération.",
-    "imageURL": "assets/computer.jpg"
+    "imageURL": "assets/images/computer.jpg"
   },
   {
     "productId":8,
-    "productName": "Collections de vieux livres",
+    "productName": "Collection de vieux livres",
     "price": 0.95,
     "category": "livres",
     "description": "Collection de vieux livres. Idéale pour décoration.",
