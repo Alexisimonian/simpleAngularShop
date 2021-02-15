@@ -6,9 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductModule } from './products/product.module';
 import { HomeComponent } from './home/home.component';
+import { ShareModule } from './shared/share.module';
 
 @NgModule({
-  imports: [BrowserModule, HttpClientModule, ProductModule, AppRoutingModule],
+  imports: [
+    ShareModule,
+    BrowserModule,
+    HttpClientModule,
+    ProductModule,
+    AppRoutingModule,
+  ],
   declarations: [AppComponent, HomeComponent],
   bootstrap: [AppComponent],
 })

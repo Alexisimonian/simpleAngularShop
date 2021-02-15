@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, IterableDiffers, OnInit } from '@angular/core';
 import { ProductService } from './product.service';
 import { IProduct } from './product';
 import { ICart } from './cart';
@@ -13,6 +13,7 @@ export class ProductListComponent implements OnInit {
   cart: ICart[] = [];
   total: number = 0;
   errorMessage: string = '';
+  filteredList: IProduct[] = [];
 
   constructor(private productService: ProductService) {}
 

@@ -11,14 +11,33 @@ import { IProduct } from './product';
 export class ProductService {
   private productUrl = 'assets/products/products.json';
   total: number = 0;
+  products: IProduct[] = [];
+  filteredProducts: IProduct[] = [];
 
   constructor(private http: HttpClient) {}
 
+  setFilter(filter: string) {
+    this.filteredProducts = [];
+    this.getProducts().subscribe({
+      next: (product) => {
+        this.products = product;
+      },
+    });
+    this.products.forEach((product) => {
+      if (
+        product.productName.search(filter) !== -1 ||
+        product.category.search(filter) !== -1
+      ) {
+        this.filteredProducts.push(product);
+        console.log(this.filteredProducts);
+      }
+    });
+  }
+
   getProducts(): Observable<IProduct[]> {
-    return this.http.get<IProduct[]>(this.productUrl).pipe(
-      tap((data) => console.log('All: ' + JSON.stringify(data))),
-      catchError(this.handleError)
-    );
+    return this.http
+      .get<IProduct[]>(this.productUrl)
+      .pipe(tap((data) => catchError(this.handleError)));
   }
 
   private handleError(err: HttpErrorResponse) {

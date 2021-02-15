@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ProductListComponent } from './product-list.component';
 import { ProductService } from './product.service';
 
 @Component({
