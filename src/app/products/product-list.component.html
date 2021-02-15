@@ -79,7 +79,12 @@
             </tr>
             <tr>
               <td>
-                <button class="btn btn-warning btn-block" id="checkout">
+                <button
+                  class="btn btn-warning btn-block"
+                  id="checkout"
+                  (click)="sendTotal(total)"
+                  [routerLink]="['/thank-you']"
+                >
                   Checkout
                 </button>
               </td>

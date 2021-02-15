@@ -10,6 +10,7 @@ import { IProduct } from './product';
 })
 export class ProductService {
   private productUrl = 'assets/products/products.json';
+  total: number = 0;
 
   constructor(private http: HttpClient) {}
 

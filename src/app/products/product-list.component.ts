@@ -4,6 +4,7 @@ import { IProduct } from './product';
 import { ICart } from './cart';
 
 @Component({
+  selector: 'product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css'],
 })
@@ -47,5 +48,9 @@ export class ProductListComponent implements OnInit {
         ? this.cart.splice(this.cart.indexOf(product), 1)
         : false;
     }
+  }
+
+  sendTotal(total: number) {
+    this.productService.total = total;
   }
 }

@@ -1,1 +1,17 @@
-<p>thankyou works!</p>
+<div class="card">
+  <div class="card-header">
+    {{ pageTitle }}
+  </div>
+  <div class="card-body">
+    <p>Thank you !! 🎊🎊</p>
+    <p>
+      You bought for {{ total }} euros ! That's amazing. You will receive
+      everything in the next few days.
+    </p>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-warning" [routerLink]="['/home']">
+      Welcome page
+    </button>
+  </div>
+</div>
