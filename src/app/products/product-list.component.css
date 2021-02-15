@@ -47,3 +47,30 @@
   transform: translate(0, 30px);
   color: gray;
 }
+
+.cart-item {
+  width: 100%;
+}
+
+.cart-item td:first-child {
+  width: 220px;
+}
+
+#minus {
+  font-weight: bold;
+}
+
+.list-group-item {
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.footer {
+  width: 100%;
+}
+
+.total {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.5em;
+}
